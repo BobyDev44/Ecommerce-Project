@@ -160,7 +160,7 @@ else:
     CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
     DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:4200"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:4200", "https://ecommerce-project-g49r.onrender.com"]
 
 AUTH_USER_MODEL = "users.CustomUser"
 LOGIN_URL = "iniciarsesion"
