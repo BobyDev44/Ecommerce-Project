@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+</head>
+<body>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'users/registro.css' %}">
+
+<main>
+    <section class="content">
+        <div class="h1">
+            <h1>Crear Cuenta</h1>
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form}}
+            <button type="submit">Registrarse</button>
+            <button type="submit">Registrarse</button>
+        </form>
+        <div class="is">
+            <p>Tienes una cuenta? <a href="/users/iniciarsesion/">Iniciar Sesión</a></p>
+        </div>
+    </section>
+
+</main>
+
+<script>
+
+    const deleteContent = document.querySelectorAll(".helptext").forEach(e => {
+        e.remove()
+    });
+    // const deleteUL = document.querySelectorAll("ul").forEach(e => {
+    //     e.remove()
+    // });
+    const deleteDIV = document.querySelectorAll("#id_usable_password").forEach(e => {
+        e.remove()
+    });
+
+    const dad = document.querySelector("form");
+    // const hijoul = dad.children[7].remove();
+    const hijos = dad.children[5].remove();
+    // const hijop = dad.children[9].remove();
+
+    const usuario = document.querySelector("label[for='id_username']");
+    usuario.textContent = "Usuario";
+
+    const email = document.querySelector("label[for='id_email']");
+    email.textContent = "Email";
+
+    const password1 = document.querySelector("label[for='id_password1']");
+    password1.textContent = "Contraseña";
+
+    const password2 = document.querySelector("label[for='id_password2']");
+    password2.textContent = "Confirma la contraseña";
+
+     console.log(usuario)
+</script>
+</body>
+</html>
+
