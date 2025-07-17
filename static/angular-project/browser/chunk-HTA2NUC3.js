@@ -1,1 +1,0 @@
-var e={apiUrlProducts:"https://ecommerce-project-g49r.onrender.com/api/v1/products/",apiUrlCategory:"https://ecommerce-project-g49r.onrender.com/api/v1/category/",apiUrlPedidos:"https://ecommerce-project-g49r.onrender.com/api/v1/pedidos/"};export{e as a};
