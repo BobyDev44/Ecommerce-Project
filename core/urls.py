@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path, include, re_path
 from rest_framework import routers
 from .views import *
 
@@ -9,5 +9,6 @@ router.register(r"pedidos", PedidosView, "pedidos")
 
 urlpatterns = [
     path("api/v1/", include(router.urls)),
-    path("", frontend)
+    path("", frontend),
+    re_path(r"^.*$", frontend)
 ]

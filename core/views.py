@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .serializers import *
 from .models import Products, Category
 from rest_framework import viewsets
+from django.views.generic import TemplateView
 
 # Create your views here.
 
