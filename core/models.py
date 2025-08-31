@@ -18,7 +18,7 @@ def get_image_category_field():
 
 class Category(models.Model):
     category = models.CharField(max_length=50)
-    image = get_image_category_field()
+    #image = get_image_category_field()
     
 
     def __str__(self):
