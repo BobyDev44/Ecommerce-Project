@@ -10,11 +10,11 @@ def get_image_field():
     else:
         return CloudinaryField("image")
     
-def get_image_category_field():
-    if settings.DEBUG:
-        return models.ImageField(upload_to="categories")
-    else:
-        return CloudinaryField("image")
+# def get_image_category_field():
+#     if settings.DEBUG:
+#         return models.ImageField(upload_to="categories", null=True, blank=True)
+#     else:
+#        return CloudinaryField("image")
 
 class Category(models.Model):
     category = models.CharField(max_length=50)
